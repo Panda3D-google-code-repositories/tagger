@@ -3,7 +3,7 @@ This is a little side project I've been working on--a simple online multiplayer 
 
 It's still a rough work in progress, but I think it's playable. Come give it a try!
 
-http://www.ddrose.com/~drose/tagger 
+http://www.ddrose.com/~drose/tagger ([archive link](https://web.archive.org/web/20101008071513/http://tagger.ddrose.com/tagger.html))
 
 Since it's a multiplayer game, it's more fun if there are multiple people in the game at the same time. Invite your friends. :) 
 
