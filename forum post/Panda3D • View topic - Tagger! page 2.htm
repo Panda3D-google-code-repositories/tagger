@@ -1,0 +1,1684 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="keywords" content="Panda3D, Panda, 3D, Python, graphics, free, game, engine, game rendering engine, simulation, open source, free download, Disney, ETC, Entertainment Technology Center, open-source" />
+<meta name="description" content="Free open source 3D game and simulation engine developed by Disney and maintained by Carnegie Mellon University\'s Entertainment Technology Center" />
+<meta property="og:site_name" content="Panda3D Forums" />
+
+<title>Panda3D &bull; View topic - Tagger!</title>
+
+<link rel="alternate" type="application/atom+xml" title="Feed - Panda3D" href="https://www.panda3d.org/forums/feed.php" /><link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="https://www.panda3d.org/forums/feed.php?mode=topics" /><link rel="alternate" type="application/atom+xml" title="Feed - Forum - Showcase" href="https://www.panda3d.org/forums/feed.php?f=6" /><link rel="alternate" type="application/atom+xml" title="Feed - Topic - Tagger!" href="https://www.panda3d.org/forums/feed.php?f=6&amp;t=7794" />
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '2';
+	var per_page = '30';
+	var base_url = './viewtopic.php?f=6&amp;t=7794';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript">
+function showsubmenu(id, tclass, total){
+
+  for(s=1; s <= total; s++){
+  menu = document.getElementById("p3dsection"+s);
+    if (s == id){
+      if (tclass == "selected"){
+        menu.style.borderBottomColor = "white";
+      } else {
+menu.style.borderBottomColor = "#3F4F8F";
+menu.style.backgroundColor = "#3F4F8F";
+      }
+    } else {
+
+      if (menu.style.backgroundColor.toLowerCase() == "#3f4f8f" ||
+            menu.style.backgroundColor.toLowerCase() == "rgb(63, 79, 143)"){
+        menu.style.backgroundColor ="#6173BA";
+      }
+      menu.style.borderBottomColor = "#CDD3E9";
+    }
+  }
+
+
+  ssublinks = document.getElementById("sublinks");
+  if (tclass == "selected"){
+    ssublinks.style.backgroundColor = "white";
+    ssublinks.style.backgroundImage = "url(/nimages/gradbar.png)";
+  } else {
+    //sublinks.style.backgroundColor = "#7A89C4";
+    ssublinks.style.backgroundColor = "#3F4F8F";
+    ssublinks.style.backgroundImage = "url(/nimages/navygrad.png)";
+  }
+
+  submenu = document.getElementById("p3dsubsection"+id);
+
+  for(i=1;i<=total;i++){
+    if(i==id){
+      submenu.style.display="block";
+    } else {
+      document.getElementById("p3dsubsection"+i).style.display="none";
+    }
+  }
+
+}
+
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+
+<link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+<link href="./styles/pandasilver/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="./style.php?id=2&amp;lang=en" rel="stylesheet" type="text/css" media="screen, projection" />
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+<table width=960 cellpadding=0 cellspacing=0 id=main align=center>
+<tr>
+<td id=borderleft></td>
+<td id=maincenter valign=top>
+
+
+<table id=container width="100%" cellpadding=0 cellspacing=0 align=center>
+<tr><td id=header><div id=c1><div id=c2>
+<a href="/"><img border=0 src="/images/panda-logo-2.png" id=pandalogo alt="Panda3D Logo"></a>
+<img src="/images/panda-logo-caption.png" id=pandalogocaption alt="Panda3D">
+<img src="/images/etc-logo.png" id=etclogo alt="ETC">
+<img src="/images/etc-logo-caption.png" id=etclogocaption alt="ETC">
+<table id=navigation width="100%" cellpadding=0 cellspacing=0><tr>
+<td class=paddingleft></td>
+<script type="text/javascript"><!--
+pic1= new Image(16,16);
+pic1.src="/icon/house.png";
+pic2= new Image(16,16);
+pic2.src="/icon/tag_blue.png";
+pic3= new Image(16,16);
+pic3.src="/icon/flag_green.png";
+pic4= new Image(16,16);
+pic4.src="/icon/email.png";
+pic5= new Image(16,16);
+pic5.src="/icon/pictures.png";
+pic6= new Image(16,16);
+pic6.src="/icon/joystick.png";
+pic7= new Image(16,16);
+pic7.src="/icon/cog_go.png";
+pic8= new Image(16,16);
+pic8.src="/icon/package_green.png";
+pic9= new Image(16,16);
+pic9.src="/icon/page_lightning.png";
+pic10= new Image(16,16);
+pic10.src="/icon/book_open.png";
+pic11= new Image(16,16);
+pic11.src="/nimages/python16.png";
+pic12= new Image(16,16);
+pic12.src="/icon/chart_organisation.png";
+pic13= new Image(16,16);
+pic13.src="/icon/page_lightning.png";
+pic14= new Image(16,16);
+pic14.src="/icon/film.png";
+pic15= new Image(16,16);
+pic15.src="/icon/application_view_gallery.png";
+pic16= new Image(16,16);
+pic16.src="/icon/comments.png";
+pic17= new Image(16,16);
+pic17.src="/icon/user_comment.png";
+pic18= new Image(16,16);
+pic18.src="/icon/bug.png";
+pic19= new Image(16,16);
+pic19.src="/icon/pencil.png";
+--></script><td class="unselected" id="p3dsection1" style="white-space:nowrap"><a href="/" style="white-space:nowrap;text-decoration:none;"  onmouseover="javascript:showsubmenu(1,'unselected', 5)"  ><img class=absmiddle width=16 height=16 src="/icon/information.png" border=0 alt=""> Information</a></td><td class=padding></td><td class="unselected" id="p3dsection2" style="white-space:nowrap"><a href="/gallery.php" style="white-space:nowrap;text-decoration:none;"  onmouseover="javascript:showsubmenu(2,'unselected', 5)"  ><img class=absmiddle width=16 height=16 src="/icon/color_swatch.png" border=0 alt=""> Gallery</a></td><td class=padding></td><td class="unselected" id="p3dsection3" style="white-space:nowrap"><a href="/download.php" style="white-space:nowrap;text-decoration:none;"  onmouseover="javascript:showsubmenu(3,'unselected', 5)"  ><img class=absmiddle width=16 height=16 src="/icon/package.png" border=0 alt=""> Download</a></td><td class=padding></td><td class="unselected" id="p3dsection4" style="white-space:nowrap"><a href="/documentation.php" style="white-space:nowrap;text-decoration:none;"  onmouseover="javascript:showsubmenu(4,'unselected', 5)"  ><img class=absmiddle width=16 height=16 src="/icon/report.png" border=0 alt=""> Documentation</a></td><td class=padding></td><td class="selected" id="p3dsection5" style="white-space:nowrap"><a href="/community.php" style="white-space:nowrap;text-decoration:none;"  onmouseover="javascript:showsubmenu(5,'selected', 5)"  ><img class=absmiddle width=16 height=16 src="/icon/group.png" border=0 alt=""> Community</a></td>
+<td class=paddingright>&nbsp;<!-- important hack --></td>
+</tr></table>
+</div></div>
+</td></tr><tr><td class=submenu valign=middle><div id=sublinks><div id=p3dsubsection1 style='display:none'><span><a href="/" style='white-space:nowrap;color:white;'><img class=absmiddle width=16 height=16 src="/icon/house.png" border=0 alt="" style="margin-right:4px;"></a><a href="/" style='white-space:nowrap;color:white;'>Home</a></span><span><a href="/manual/index.php/Features" style='white-space:nowrap;color:white;'><img class=absmiddle width=16 height=16 src="/icon/tag_blue.png" border=0 alt="" style="margin-right:4px;"></a><a href="/manual/index.php/Features" style='white-space:nowrap;color:white;'>Features</a></span><span><a href="/license.php" style='white-space:nowrap;color:white;'><img class=absmiddle width=16 height=16 src="/icon/flag_green.png" border=0 alt="" style="margin-right:4px;"></a><a href="/license.php" style='white-space:nowrap;color:white;'>License</a></span><span><a href="/contact.php" style='white-space:nowrap;color:white;'><img class=absmiddle width=16 height=16 src="/icon/email.png" border=0 alt="" style="margin-right:4px;"></a><a href="/contact.php" style='white-space:nowrap;color:white;'>Contact</a></span></div><div id=p3dsubsection2 style='display:none'><span><a href="/screens.php" style='white-space:nowrap;color:white;'><img class=absmiddle width=16 height=16 src="/icon/pictures.png" border=0 alt="" style="margin-right:4px;"></a><a href="/screens.php" style='white-space:nowrap;color:white;'>Screenshots</a></span><span><a href="/gallery/" style='white-space:nowrap;color:white;'><img class=absmiddle width=16 height=16 src="/icon/joystick.png" border=0 alt="" style="margin-right:4px;"></a><a href="/gallery/" style='white-space:nowrap;color:white;'>Online Demos</a></span></div><div id=p3dsubsection3 style='display:none'><span><a href="/download.php?runtime" style='white-space:nowrap;color:white;'><img class=absmiddle width=16 height=16 src="/icon/cog_go.png" border=0 alt="" style="margin-right:4px;"></a><a href="/download.php?runtime" style='white-space:nowrap;color:white;'>Runtime</a></span><span><a href="/download.php?sdk" style='white-space:nowrap;color:white;'><img class=absmiddle width=16 height=16 src="/icon/package_green.png" border=0 alt="" style="margin-right:4px;"></a><a href="/download.php?sdk" style='white-space:nowrap;color:white;'>SDK</a></span><span><a href="https://github.com/panda3d/panda3d" style='white-space:nowrap;color:white;'><img class=absmiddle width=16 height=16 src="/icon/page_lightning.png" border=0 alt="" style="margin-right:4px;"></a><a href="https://github.com/panda3d/panda3d" style='white-space:nowrap;color:white;'>Git</a></span></div><div id=p3dsubsection4 style='display:none'><span><a href="/manual/" style='white-space:nowrap;color:white;'><img class=absmiddle width=16 height=16 src="/icon/book_open.png" border=0 alt="" style="margin-right:4px;"></a><a href="/manual/" style='white-space:nowrap;color:white;'>Manual</a></span><span><a href="/reference/python" style='white-space:nowrap;color:white;'><img class=absmiddle width=16 height=16 src="/nimages/python16.png" border=0 alt="" style="margin-right:4px;"></a><a href="/reference/python" style='white-space:nowrap;color:white;'>Python Reference</a></span><span><a href="/reference/cxx" style='white-space:nowrap;color:white;'><img class=absmiddle width=16 height=16 src="/icon/chart_organisation.png" border=0 alt="" style="margin-right:4px;"></a><a href="/reference/cxx" style='white-space:nowrap;color:white;'>C++ Reference</a></span><span><a href="/manual/index.php/Cheat_Sheets" style='white-space:nowrap;color:white;'><img class=absmiddle width=16 height=16 src="/icon/page_lightning.png" border=0 alt="" style="margin-right:4px;"></a><a href="/manual/index.php/Cheat_Sheets" style='white-space:nowrap;color:white;'>Cheat Sheets</a></span><span><a href="/manual/index.php/Video_Tutorials" style='white-space:nowrap;color:white;'><img class=absmiddle width=16 height=16 src="/icon/film.png" border=0 alt="" style="margin-right:4px;"></a><a href="/manual/index.php/Video_Tutorials" style='white-space:nowrap;color:white;'>Videos</a></span><span><a href="/manual/index.php/Sample_Programs_in_the_Distribution" style='white-space:nowrap;color:white;'><img class=absmiddle width=16 height=16 src="/icon/application_view_gallery.png" border=0 alt="" style="margin-right:4px;"></a><a href="/manual/index.php/Sample_Programs_in_the_Distribution" style='white-space:nowrap;color:white;'>Sample Applications</a></span></div><div id=p3dsubsection5 style='display:block'><span><a href="/forums/index.php" style='white-space:nowrap;'><img class=absmiddle width=16 height=16 src="/icon/comments.png" border=0 alt="" style="margin-right:4px;"></a><a href="/forums/index.php" style='white-space:nowrap;'>Forums</a></span><span><a href="/manual/index.php/The_IRC_Channel" style='white-space:nowrap;'><img class=absmiddle width=16 height=16 src="/icon/user_comment.png" border=0 alt="" style="margin-right:4px;"></a><a href="/manual/index.php/The_IRC_Channel" style='white-space:nowrap;'>IRC Channel</a></span><span><a href="https://bugs.launchpad.net/panda3d" style='white-space:nowrap;'><img class=absmiddle width=16 height=16 src="/icon/bug.png" border=0 alt="" style="margin-right:4px;"></a><a href="https://bugs.launchpad.net/panda3d" style='white-space:nowrap;'>Bug Tracker</a></span><span><a href="/blog/" style='white-space:nowrap;'><img class=absmiddle width=16 height=16 src="/icon/pencil.png" border=0 alt="" style="margin-right:4px;"></a><a href="/blog/" style='white-space:nowrap;'>Blog</a></span></div></div></td></tr><tr><td id=pcontent valign=top>
+
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+                <h2><a href='./index.php' style='text-decoration:none;' accesskey="h">Panda3D Forums</a></h2>
+
+		<div class="forumnav linklist">
+			<a href="./faq.php" title="Frequently Asked Questions" style="text-decoration:none;"><img border=0 width=16 height=16 align="absmiddle" src="/icon/help.png" /> <u>FAQ</u></a>
+			<a href="./search.php" title="Search" style="text-decoration:none;"><img border=0 width=16 height=16 align="absmiddle" src="/icon/magnifier.png" /> <u>Search</u></a>
+			<a href="./memberlist.php" title="View complete list of members" style="text-decoration:none;"><img border=0 width=16 height=16 align="absmiddle" src="/icon/group.png" /> <u>Members</u></a>
+					<a href="./ucp.php" title="User Control Panel" accesskey="e" style="text-decoration:none;"><img border=0 width=16 height=16 align="absmiddle" src="/icon/vcard_edit.png" /> <u>Profile</u></a>
+					<a href="./ucp.php?i=pm&amp;folder=inbox" style="text-decoration:none;"><img border=0 width=16 height=16 align="absmiddle" src="/icon/email.png" /> <u><strong>0</strong> new messages</u></a>
+				<a href="./ucp.php?mode=logout&amp;sid=acadd91ec04bdf6b7c0327454dabd823" title="Logout [ frainfreeze ]" accesskey="x" style="text-decoration:none;"><img border=0 width=16 height=16 align="absmiddle" src="/icon/door_open.png" /> <u>Logout [ frainfreeze ]</u></a>
+			
+
+			<form action="./search.php" method="get" id="search" style="display:inline;float:right;">
+				<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="searchbox" style="width:150px;border: 1px solid #8DBA30;" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+				<input type="image" src="/icon/magnifier.png" width=16 height=16 border=0 name="searchx" value="Search" />
+			</form>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<h2><a href="./viewtopic.php?f=6&amp;t=7794&amp;start=30" style="text-decoration: none;">Tagger!</a></h2>
+
+<p class="returnto"><a href="./viewforum.php?f=6" class="left-box left" accesskey="r">Return to Showcase</a></p>
+<div class="clear"></div>
+
+
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=6&amp;t=7794" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="7794" />
+<input type="hidden" name="sf" value="msgonly" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			56 posts
+			 &bull; <a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>2</strong> of <strong>2</strong></a> &bull; <span><a href="./viewtopic.php?f=6&amp;t=7794">1</a><span class="page-sep">, </span><strong>2</strong></span>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p47885" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=47885" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=47885" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 class="first"><a href="#p47885"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=47885#p47885"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=752">astelix</a></strong> &raquo; Thu Dec 03, 2009 6:40 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>drwr wrote:</cite><blockquote><div><cite>astelix wrote:</cite>the demo with the flash script don't work 100% (can't see much flash workability but just a black band to the right)</div></blockquote><br />This is the demo with the white flash &quot;PandaPal&quot; plugin layered on top of the gray Panda window?  I've never heard of flash failing to work altogether in that demo.  Can you tell me more?<br /><br />David</div></blockquote>
+<br />
+<br />ah so it works fine - I tought that the flash portion was the big right black band.
+<br />by the way I found that the linux side isn't so on par with the windows one - it works just with the tagger - those scripts in the demos index page list aren't willing to work with my rig (64 bit)</div>
+
+			<div id="sig47885" class="signature"><span style="font-size: 84%; line-height: 116%;">My Rig:<br />P3D 1.7.0@WinXP &amp; Kubuntu 10.04- Athlon 64 5200 X2 ~ Radeon 3200HD (integrated)</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile47885">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=752"><img src="http://www.fabiushouse.com/p3d/forumavatar.jpg" width="80" height="80" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=752">astelix</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 866</dd><dd><strong>Joined:</strong> Mon Mar 27, 2006 11:36 pm</dd><dd><strong>Location:</strong> Milano, ITA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=47885" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p47890" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=47890" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=47890" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p47890"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=47890#p47890"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=19">drwr</a></strong> &raquo; Thu Dec 03, 2009 7:18 pm </p>
+
+			
+
+			<div class="content"><blockquote class="uncited"><div>those scripts in the demos index page list aren't willing to work with my rig (64 bit)</div></blockquote>
+<br />That's right, my demo page uses a build that is only compiled for 32-bit.  It's rdb's build that supports 64-bit, and I've only thus far released Tagger using that build.  Eventually there will be a suite of demos using that official build.
+<br />
+<br />David</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile47890">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=19">drwr</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 11425</dd><dd><strong>Joined:</strong> Fri Feb 13, 2004 7:42 pm</dd><dd><strong>Location:</strong> Glendale, CA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=47890" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p47969" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=47969" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=47969" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p47969"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=47969#p47969"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1988">rdb</a></strong> &raquo; Sat Dec 05, 2009 4:31 pm </p>
+
+			
+
+			<div class="content">Official plugin build of latest CVS (as of now)
+<br /><!-- m --><a class="postlink" href="http://152.10.254.215/~pro-rsoft/builds/Panda3D-Runtime-0.9.7.exe">http://152.10.254.215/~pro-rsoft/builds ... -0.9.7.exe</a><!-- m -->
+<br />I've also just updated the rtdist build. The console window shouldn't pop up anymore now.
+<br />Can anyone test if the audio problem is fixed now? I can hear the background music fine in my virtual machine.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile47969">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=1988">rdb</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 9856</dd><dd><strong>Joined:</strong> Mon Dec 04, 2006 12:58 pm</dd><dd><strong>Location:</strong> Netherlands</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=47969" title="Private message"><span>Private message</span></a></li><li class="web-icon"><a href="http://rdb.name/" title="WWW: http://rdb.name/"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p47972" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=47972" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=47972" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p47972"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=47972#p47972"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=19">drwr</a></strong> &raquo; Sat Dec 05, 2009 4:52 pm </p>
+
+			
+
+			<div class="content">I got annoyed with other apparent bugs with OpenAL, and switched my game to using FMod across the board.  So that might change things too.
+<br />
+<br />David</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile47972">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=19">drwr</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 11425</dd><dd><strong>Joined:</strong> Fri Feb 13, 2004 7:42 pm</dd><dd><strong>Location:</strong> Glendale, CA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=47972" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p48038" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=48038" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=48038" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p48038"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=48038#p48038"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=19">drwr</a></strong> &raquo; Mon Dec 07, 2009 6:40 am </p>
+
+			
+
+			<div class="content">With thanks due to rdb for updating his Panda build, I've released a new version of Tagger that should be generally smoother.  Those of you who were having trouble with choppiness before, give it another try. <img src="./images/smilies/icon_smile.gif" alt=":)" title="Smile" />
+<br />
+<br />David</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile48038">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=19">drwr</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 11425</dd><dd><strong>Joined:</strong> Fri Feb 13, 2004 7:42 pm</dd><dd><strong>Location:</strong> Glendale, CA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=48038" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p48052" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=48052" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=48052" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p48052"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=48052#p48052"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=752">astelix</a></strong> &raquo; Mon Dec 07, 2009 12:25 pm </p>
+
+			
+
+			<div class="content"><blockquote class="uncited"><div>lost connection with gameserver<br />press esc to quit</div></blockquote>
+<br />
+<br />this is what I actually got after the little loading panda</div>
+
+			<div id="sig48052" class="signature"><span style="font-size: 84%; line-height: 116%;">My Rig:<br />P3D 1.7.0@WinXP &amp; Kubuntu 10.04- Athlon 64 5200 X2 ~ Radeon 3200HD (integrated)</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile48052">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=752"><img src="http://www.fabiushouse.com/p3d/forumavatar.jpg" width="80" height="80" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=752">astelix</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 866</dd><dd><strong>Joined:</strong> Mon Mar 27, 2006 11:36 pm</dd><dd><strong>Location:</strong> Milano, ITA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=48052" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p48067" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=48067" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=48067" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p48067"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=48067#p48067"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=3270">ambyra</a></strong> &raquo; Mon Dec 07, 2009 3:31 pm </p>
+
+			
+
+			<div class="content">I have the same problem as astelix. I'm on ubuntu 9.10 with the firefox plugin.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile48067">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=3270">ambyra</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 130</dd><dd><strong>Joined:</strong> Sun Sep 21, 2008 12:47 am</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=48067" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p48074" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=48074" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=48074" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p48074"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=48074#p48074"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=19">drwr</a></strong> &raquo; Mon Dec 07, 2009 6:33 pm </p>
+
+			
+
+			<div class="content">Oh, whoops, I had the wrong server port in there.  Should be OK now.
+<br />
+<br />David</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile48074">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=19">drwr</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 11425</dd><dd><strong>Joined:</strong> Fri Feb 13, 2004 7:42 pm</dd><dd><strong>Location:</strong> Glendale, CA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=48074" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p48109" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=48109" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=48109" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p48109"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=48109#p48109"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=3270">ambyra</a></strong> &raquo; Tue Dec 08, 2009 5:31 am </p>
+
+			
+
+			<div class="content">Cool game david! Haha, I got my tag juice all over you. I can't wait to see the source. This kind of thing would make it really easy for people to join a multiplayer game online. 
+<br />
+<br />While we were playing, you jumped from one part of the screen to the other instantaneously. Is there too much info being transmitted at once for my connection to handle, or does it have something to do with the frequency of status updates?
+<br />
+<br />Also, how could you implement a feature that could save player information online? Like an online rpg that would let players log in and out, or save high scores in an arcade game. 
+<br />
+<br />Finally, will there ever be a way to have a custom loading bar, splash icon, and play button. I'm not a big fan of the current panda. The old panda with red and green glasses was pretty cool.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile48109">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=3270">ambyra</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 130</dd><dd><strong>Joined:</strong> Sun Sep 21, 2008 12:47 am</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=48109" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p48110" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=48110" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=48110" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p48110"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=48110#p48110"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=19">drwr</a></strong> &raquo; Tue Dec 08, 2009 5:45 am </p>
+
+			
+
+			<div class="content"><blockquote class="uncited"><div>While we were playing, you jumped from one part of the screen to the other instantaneously. Is there too much info being transmitted at once for my connection to handle, or does it have something to do with the frequency of status updates?</div></blockquote><br />Hmm, I'm not sure about this, but I do have the running speed cranked up pretty high, and there's a normal latency of around ~250 ms or so for any internet traffic.  You can run pretty far in a quarter second at my current running speed, so I imagine that probably accounts for it.<br /><br /><blockquote class="uncited"><div>Also, how could you implement a feature that could save player information online? Like an online rpg that would let players log in and out, or save high scores in an arcade game.</div></blockquote><br />Sure, this can be done same as saving things locally; you just have to write the code on the server to do it.  (In my game, for instance, there is a Python program constantly running on the server that accepts connections and generates the maze and stuff.  It could just as easily save high scores.)<br /><br /><blockquote class="uncited"><div>Finally, will there ever be a way to have a custom loading bar, splash icon, and play button. I'm not a big fan of the current panda. The old panda with red and green glasses was pretty cool.</div></blockquote>
+<br />You can do this today.  All of these can be switched out from the HTML page that embeds the game; it's documented in the manual.
+<br />
+<br />David</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile48110">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=19">drwr</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 11425</dd><dd><strong>Joined:</strong> Fri Feb 13, 2004 7:42 pm</dd><dd><strong>Location:</strong> Glendale, CA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=48110" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p48118" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=48118" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=48118" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p48118"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=48118#p48118"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=348">adr</a></strong> &raquo; Tue Dec 08, 2009 1:07 pm </p>
+
+			
+
+			<div class="content"><blockquote class="uncited"><div><blockquote class="uncited"><div>While we were playing, you jumped from one part of the screen to the other instantaneously. Is there too much info being transmitted at once for my connection to handle, or does it have something to do with the frequency of status updates? </div></blockquote><br /><br />Hmm, I'm not sure about this, but I do have the running speed cranked up pretty high, and there's a normal latency of around ~250 ms or so for any internet traffic. You can run pretty far in a quarter second at my current running speed, so I imagine that probably accounts for it. </div></blockquote>
+<br />
+<br />Are you using the fluid movemnts? That would help some, so you don't &quot;instantaneously&quot; move to fast around the area.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile48118">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=348">adr</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 532</dd><dd><strong>Joined:</strong> Thu Oct 13, 2005 3:26 am</dd><dd><strong>Location:</strong> USA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=48118" title="Private message"><span>Private message</span></a></li><li class="yahoo-icon"><a href="http://edit.yahoo.com/config/send_webmesg?.target=adr2t&amp;.src=pg" onclick="popup(this.href, 780, 550); return false;" title="YIM"><span>YIM</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p48123" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=48123" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=48123" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p48123"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=48123#p48123"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=3270">ambyra</a></strong> &raquo; Tue Dec 08, 2009 2:38 pm </p>
+
+			
+
+			<div class="content">Hopefully you'll release that server side code too <img src="./images/smilies/icon_wink.gif" alt=":wink:" title="Wink" /></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile48123">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=3270">ambyra</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 130</dd><dd><strong>Joined:</strong> Sun Sep 21, 2008 12:47 am</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=48123" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p48142" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=48142" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=48142" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p48142"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=48142#p48142"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=19">drwr</a></strong> &raquo; Tue Dec 08, 2009 8:09 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>adr wrote:</cite>Are you using the fluid movemnts? That would help some, so you don't &quot;instantaneously&quot; move to fast around the area.</div></blockquote><br />Not sure which you're referring to: my collision handler has fluid detection enabled, and I'm using the DistributedSmoothNode to smooth out the apparent movement of the remote players.<br /><br />But the internet is what it is, and ~250 ms is only an average.  If one particular packet arrives late, say 500 ms after it was delivered, then you won't hear about my starting position until I'm already at my ending position, and there's no way to avoid you seeing me &quot;pop&quot; across the screen.  It's just a reality of internet-based games.  You can reduce this effect by increasing the delay between the time you hear about an effect and the time you see it, which makes it more forgiving for late packets; or you can reduce it by decreasing the run speed, which makes errors less obvious.<br /><br /><blockquote><div><cite>ambyra wrote:</cite>Hopefully you'll release that server side code too</div></blockquote>
+<br />Of course. <img src="./images/smilies/icon_smile.gif" alt=":)" title="Smile" />
+<br />
+<br />David</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile48142">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=19">drwr</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 11425</dd><dd><strong>Joined:</strong> Fri Feb 13, 2004 7:42 pm</dd><dd><strong>Location:</strong> Glendale, CA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=48142" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p48367" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=48367" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=48367" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p48367"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=48367#p48367"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=2109">Zothen</a></strong> &raquo; Sat Dec 12, 2009 3:10 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>drwr wrote:</cite><blockquote class="uncited"><div>I was trying to test how smooth the multiplayer part is- it seems a little jittery? - it seems like it could be a lot of fun but it would be hard to play something like a FPS multiplayer as it is.</div></blockquote><br />There's a reason that most FPS games are designed for LAN only. <img src="./images/smilies/icon_smile.gif" alt=":)" title="Smile" /><br /></div></blockquote>
+<br />A FPS game for LAN only?? Lets see which one it might be...
+<br />Maybe a certain dev just forgot the needed latency calculations, that are needed for the internet? Bad developer - no cookie, hehe! <img src="./images/smilies/icon_wink.gif" alt=";)" title="Wink" />
+<br />
+<br />Anyway, I cant get it running on Ubuntu 9.04 - FF plugin installed - loaded and then just the red start button. Unfortunatly I have no clue where to put the linux plugin...  Also installed rbd's package but still no change. Guess me and linux arent compatible, hehe</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile48367">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=2109">Zothen</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 30</dd><dd><strong>Joined:</strong> Wed Feb 28, 2007 3:12 am</dd><dd><strong>Location:</strong> Tanelorn</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=48367" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p48368" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=48368" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=48368" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p48368"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=48368#p48368"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1988">rdb</a></strong> &raquo; Sat Dec 12, 2009 3:55 pm </p>
+
+			
+
+			<div class="content">If you installed the panda3d-runtime package, it should work. What happens when you click that red start button?
+<br />Also, try this on the commandline:
+<br />cd ~/.panda3d/hosts/r*/p3dcert &amp;&amp; env LD_LIBRARY_PATH=. ./p3dcert a b
+<br />What happens then?</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile48368">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=1988">rdb</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 9856</dd><dd><strong>Joined:</strong> Mon Dec 04, 2006 12:58 pm</dd><dd><strong>Location:</strong> Netherlands</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=48368" title="Private message"><span>Private message</span></a></li><li class="web-icon"><a href="http://rdb.name/" title="WWW: http://rdb.name/"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p48370" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=48370" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=48370" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p48370"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=48370#p48370"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=2109">Zothen</a></strong> &raquo; Sat Dec 12, 2009 4:09 pm </p>
+
+			
+
+			<div class="content">Nothing happens when clicking the start button, besides the &quot;clicked&quot; animation.
+<br />
+<br />Regarding the command I get:
+<br />Speicherort »file:///home/magus/cd%20~/.panda3d/hosts/r*/p3dcert%20&amp;amp;&amp;amp;%20env%20LD_LIBRARY_PATH=.%20./p3dcert%20a%20b%20« konnte nicht angezeigt werden
+<br />
+<br />Translated, it cant show the location and I guess that means panda isnt installed (correctly)?</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile48370">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=2109">Zothen</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 30</dd><dd><strong>Joined:</strong> Wed Feb 28, 2007 3:12 am</dd><dd><strong>Location:</strong> Tanelorn</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=48370" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p48371" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=48371" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=48371" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p48371"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=48371#p48371"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1988">rdb</a></strong> &raquo; Sat Dec 12, 2009 4:22 pm </p>
+
+			
+
+			<div class="content">Uh, no, I meant you should open a terminal and copy&amp;paste that command there.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile48371">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=1988">rdb</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 9856</dd><dd><strong>Joined:</strong> Mon Dec 04, 2006 12:58 pm</dd><dd><strong>Location:</strong> Netherlands</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=48371" title="Private message"><span>Private message</span></a></li><li class="web-icon"><a href="http://rdb.name/" title="WWW: http://rdb.name/"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p48372" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=48372" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=48372" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p48372"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=48372#p48372"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=2109">Zothen</a></strong> &raquo; Sat Dec 12, 2009 4:28 pm </p>
+
+			
+
+			<div class="content">Well, technically the same reply in the the terminal: 
+<br />bash: cd: /home/magus/.panda3d/hosts/r*/p3dcert: No such file or directory</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile48372">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=2109">Zothen</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 30</dd><dd><strong>Joined:</strong> Wed Feb 28, 2007 3:12 am</dd><dd><strong>Location:</strong> Tanelorn</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=48372" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p48379" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=48379" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=48379" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p48379"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=48379#p48379"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=19">drwr</a></strong> &raquo; Sat Dec 12, 2009 5:59 pm </p>
+
+			
+
+			<div class="content">Uninstall the Firefox add-on.  You don't need it with rdb's package, and I think it's causing you trouble.
+<br />
+<br />David</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile48379">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=19">drwr</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 11425</dd><dd><strong>Joined:</strong> Fri Feb 13, 2004 7:42 pm</dd><dd><strong>Location:</strong> Glendale, CA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=48379" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p58781" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=58781" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=58781" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p58781"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=58781#p58781"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=3270">ambyra</a></strong> &raquo; Fri Jun 04, 2010 3:56 pm </p>
+
+			
+
+			<div class="content">drwr, is the source ever going to be released, or is it too ugly?
+<br />
+<br />I would like to learn how to make a server and client code, and this seems like a big jump in the right direction.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile58781">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=3270">ambyra</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 130</dd><dd><strong>Joined:</strong> Sun Sep 21, 2008 12:47 am</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=58781" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p58799" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=58799" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=58799" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p58799"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=58799#p58799"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=19">drwr</a></strong> &raquo; Fri Jun 04, 2010 7:48 pm </p>
+
+			
+
+			<div class="content">I haven't had much time to clean up the source code yet, but I have no objections with sharing it, such as it is.  I'll send a PM.
+<br />
+<br />David</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile58799">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=19">drwr</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 11425</dd><dd><strong>Joined:</strong> Fri Feb 13, 2004 7:42 pm</dd><dd><strong>Location:</strong> Glendale, CA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=58799" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p58893" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=58893" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=58893" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p58893"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=58893#p58893"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=752">astelix</a></strong> &raquo; Mon Jun 07, 2010 9:48 am </p>
+
+			
+
+			<div class="content">David would you please send it to me as well? (I feel a row of ppl would be pleased to see that code, ugly or not it would actually be)</div>
+
+			<div id="sig58893" class="signature"><span style="font-size: 84%; line-height: 116%;">My Rig:<br />P3D 1.7.0@WinXP &amp; Kubuntu 10.04- Athlon 64 5200 X2 ~ Radeon 3200HD (integrated)</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile58893">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=752"><img src="http://www.fabiushouse.com/p3d/forumavatar.jpg" width="80" height="80" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=752">astelix</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 866</dd><dd><strong>Joined:</strong> Mon Mar 27, 2006 11:36 pm</dd><dd><strong>Location:</strong> Milano, ITA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=58893" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p58914" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=58914" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=58914" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p58914"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=58914#p58914"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=19">drwr</a></strong> &raquo; Mon Jun 07, 2010 8:02 pm </p>
+
+			
+
+			<div class="content">OK, I'll just post the link publicly, since so many people are interested. <img src="./images/smilies/icon_smile.gif" alt=":)" title="Smile" />
+<br />
+<br /><a href="http://www.ddrose.com/~drose/tagger.tgz" class="postlink">http://www.ddrose.com/~drose/tagger.tgz</a>
+<br />
+<br />David</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile58914">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=19">drwr</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 11425</dd><dd><strong>Joined:</strong> Fri Feb 13, 2004 7:42 pm</dd><dd><strong>Location:</strong> Glendale, CA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=58914" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p58926" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=58926" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=58926" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p58926"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=58926#p58926"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=752">astelix</a></strong> &raquo; Mon Jun 07, 2010 11:35 pm </p>
+
+			
+
+			<div class="content">great, I see a cool bunch of stuff to study with inside - thankyou David</div>
+
+			<div id="sig58926" class="signature"><span style="font-size: 84%; line-height: 116%;">My Rig:<br />P3D 1.7.0@WinXP &amp; Kubuntu 10.04- Athlon 64 5200 X2 ~ Radeon 3200HD (integrated)</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile58926">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=752"><img src="http://www.fabiushouse.com/p3d/forumavatar.jpg" width="80" height="80" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=752">astelix</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 866</dd><dd><strong>Joined:</strong> Mon Mar 27, 2006 11:36 pm</dd><dd><strong>Location:</strong> Milano, ITA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=58926" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p59010" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=59010" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=59010" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p59010"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=59010#p59010"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=3270">ambyra</a></strong> &raquo; Wed Jun 09, 2010 9:14 pm </p>
+
+			
+
+			<div class="content">Hm, this is very complicated. David, do you have any recommendations for a game server guide with python? I guess there aren't any that specifically reference panda3d. I don't know anything about networking. How did you learn how to do this? Haha, do I have to enroll at Carnegie Mellon?</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile59010">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=3270">ambyra</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 130</dd><dd><strong>Joined:</strong> Sun Sep 21, 2008 12:47 am</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=59010" title="Private message"><span>Private message</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p59014" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="report-icon"><a href="./report.php?f=6&amp;p=59014" title="Report this post"><span>Report this post</span></a></li><li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=59014" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p59014"></a></h3>
+			<p class="author"><a href="./viewtopic.php?p=59014#p59014"><img src="./styles/pandasilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=3673">croxis</a></strong> &raquo; Wed Jun 09, 2010 10:50 pm </p>
+
+			
+
+			<div class="content">This distributed object server is very specific to Panda3d and is indeed complex. In a nutshell:
+<br />
+<br />DistributedObjects are replicated across the network. If I create a chair DO on my client, all clients will get a copy of that with the parameters I set.
+<br />
+<br />These parameters, and how they are communicated, are in the .dc files.
+<br />
+<br />ServerRepository is responsible for communication only, no game logic.
+<br />
+<br />All serverside game logic will also be in the form of clients, the ClientAI. The purpose of these ClientAIs is to manage things in your gameworld that clients should not have direct control over. 
+<br />
+<br />
+<br />Panda provides a lower level network system as well which is not as complicated. You can also go with a generic python network approach as well.</div>
+
+			<div id="sig59014" class="signature">David - Proud to be saving the world since 1984</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile59014">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=3673">croxis</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 513</dd><dd><strong>Joined:</strong> Thu Feb 12, 2009 11:13 pm</dd><dd><strong>Location:</strong> Portland, OR</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="pm-icon"><a href="./ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=59014" title="Private message"><span>Private message</span></a></li><li class="web-icon"><a href="http://croxis.net" title="WWW: http://croxis.net"><span>Website</span></a></li><li class="msnm-icon"><a href="./memberlist.php?mode=contact&amp;action=msnm&amp;u=3673" onclick="popup(this.href, 550, 320); return false;" title="MSNM/WLM"><span>MSNM/WLM</span></a></li><li class="aim-icon"><a href="./memberlist.php?mode=contact&amp;action=aim&amp;u=3673" onclick="popup(this.href, 550, 320); return false;" title="AIM"><span>AIM</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=6&amp;t=7794&amp;start=30">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		<a href="./viewtopic.php?f=6&amp;t=7794&amp;start=0" class="left-box left">Previous</a>
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=6&amp;t=7794" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			56 posts
+			 &bull; <a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>2</strong> of <strong>2</strong></a> &bull; <span><a href="./viewtopic.php?f=6&amp;t=7794">1</a><span class="page-sep">, </span><strong>2</strong></span>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./viewforum.php?f=6" class="left-box left" accesskey="r">Return to Showcase</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="14">Panda3D</option>
+			
+				<option value="4">&nbsp; &nbsp;Scripting Issues</option>
+			
+				<option value="12">&nbsp; &nbsp;C++ coding using Panda3D</option>
+			
+				<option value="3">&nbsp; &nbsp;Compiling or Editing the Panda Source</option>
+			
+				<option value="2">&nbsp; &nbsp;Pipeline</option>
+			
+				<option value="5">&nbsp; &nbsp;Installation</option>
+			
+				<option value="1">&nbsp; &nbsp;General Discussion</option>
+			
+				<option value="8">&nbsp; &nbsp;Code Snippets</option>
+			
+				<option value="6" selected="selected">&nbsp; &nbsp;Showcase</option>
+			
+				<option value="9">&nbsp; &nbsp;Panda Features in Development</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+
+	<h3><a href="./viewonline.php">Who is online</a></h3>
+	<p>Users browsing this forum: <a href="./memberlist.php?mode=viewprofile&amp;u=9896">frainfreeze</a> and 1 guest</p>
+</div>
+
+<div id="page-footer">
+
+	<div class="forumnav">
+		<ul class="linklist">
+			<li class="icon-home"><a href="./index.php" accesskey="h">Board index</a></li>
+				<li class="icon-subscribe"><a href="./viewtopic.php?uid=9896&amp;f=6&amp;t=7794&amp;watch=topic&amp;start=30&amp;hash=d916ff89" title="Subscribe topic">Subscribe topic</a></li><li class="icon-bookmark"><a href="./viewtopic.php?f=6&amp;t=7794&amp;start=30&amp;bookmark=1&amp;hash=d916ff89" title="Bookmark topic">Bookmark topic</a></li>
+			<li class="rightside"><a href="./ucp.php?mode=delete_cookies">Delete all board cookies</a> &bull; All times are UTC + 2 hours </li>
+		</ul>
+	</div>
+
+	<div class="copyright">
+		
+	</div>
+</div>
+
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+<div id=legal>Powered by <a href="http://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Group | &copy; Carnegie Mellon University 2010&ndash;2015 | <a href='/legal.php'>Full copyright notice</a> | <a href='/contact.php'>Contact</a></div>
+</td></tr></table></td><td id=borderright></td></tr></table></body></html>
